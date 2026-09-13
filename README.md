@@ -6,6 +6,8 @@
 
 ```bash
 python tool_governance_demo.py --transfer
+或者在项目根目录运行：
+python -m pytest tests/test_tool_governance.py -v -k "transfer"
 ```
 
 该命令会执行 `run_transfer_check()`：依次运行五个转账断言测试，全部通过后打印 transfer 工具的审计日志（只含参数键名，不含参数值）。
